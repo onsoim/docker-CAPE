@@ -4,7 +4,7 @@
 
 2. Study about Docker
 
-3. Install Cuckoo by using Docker ( It takes less then 10 min!! WoW )
+3. Install Cuckoo by using Docker ( It takes less than 10 min!! WoW )
 
 4. Build docker images for CAPE
 
