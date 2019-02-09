@@ -24,6 +24,7 @@ Thumbs.db
 # Ignore development files
 docs/book/src/_build/
 .idea/
+study/
 
 # Ignore Django secret_key
 web/web/secret_key.py
