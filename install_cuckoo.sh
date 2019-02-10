@@ -1,0 +1,1 @@
+sudo apt-get install -y python-dev python-pip zlib1g-dev libssl-dev libjpeg-dev tcpdump apparmor-utils

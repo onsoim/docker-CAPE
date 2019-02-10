@@ -4,6 +4,7 @@ markupsafe
 libvirt-python
 pymongo
 bottle
+#pefile
 django>=1.7
 chardet
 pygal
@@ -23,6 +24,7 @@ elasticsearch
 java-random
 python-whois
 bs4
+pefile2==1.2.11
 git+https://github.com/crackinglandia/pype32.git
 git+https://github.com/jsocol/django-ratelimit
 git+https://github.com/kbandla/pydeep.git
@@ -31,6 +33,7 @@ imagehash
 pyinstaller
 requests
 sqlalchemy
+# upx
 maec
 oletools==0.53.1
 networkx>=2.1
