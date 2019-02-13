@@ -1,0 +1,28 @@
+FROM onsoim/python2
+
+LABEL maintainer "https://github.com/onsoim"
+
+ENV CUCKOO_VERSION 2.0.6
+
+RUN echo " ===> Install Cuckoo Dependencies..." && \
+	apk add --no-cache gcc \
+	python-dev \
+	musl-dev \
+	libffi-dev \
+	openssl-dev \
+	bash \
+	make \
+	jpeg-dev \
+	zlib-dev \
+	linux-headers \
+	libmagic
+
+
+RUN echo " ===> Install Cuckoo..." && \
+	mkdir /cuckoo && \
+	adduser -Dh /cuckoo cuckoo && \
+	export PIP_NO_CACHE_DIR=off && \
+	export PIP_DISABLE_PIP_VERSION_CHECK=on && \
+	LDFLAGS=-L/lib pip install cuckoo==$CUCKOO_VERSION && \
+	cuckoo && \
+	cuckoo community
