@@ -1,0 +1,12 @@
+{{ cuckoo.conf }}
+[cuckoo]
+machinery = vmwareserver || virtualbox
+
+[resultserver]
+ip = $(cape docker's IP)
+
+{{ virtualbox.conf }}
+[virtualbox]
+mode = headless
+
+[cuckoo1]
